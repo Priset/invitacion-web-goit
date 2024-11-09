@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {HomeComponent} from './home/home.component';
+import {HeaderComponent} from './header/header.component';
+import {EventInfoComponent} from './event-info/event-info.component';
+import {HistoryComponent} from './history/history.component';
+import {LlajtaComponent} from './llajta/llajta.component';
+import {HotelBookingComponent} from './hotel-booking/hotel-booking.component';
+import {FooterComponent} from './footer/footer.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    HomeComponent,
+    HeaderComponent,
+    EventInfoComponent,
+    HistoryComponent,
+    LlajtaComponent,
+    HotelBookingComponent,
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'evento-goit';
-}
+export class AppComponent {}
