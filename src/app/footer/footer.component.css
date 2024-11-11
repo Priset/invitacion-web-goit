@@ -1,0 +1,57 @@
+.footer {
+  background-color: #000000; /* Fondo negro */
+  color: #FFFFFF; /* Texto blanco */
+  padding: 2rem;
+  font-family: 'Articulat', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.country-section {
+  margin-bottom: 1.5rem;
+}
+
+.country-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.city-info {
+  display: flex;
+  justify-content: flex-start; /* Alineación en una fila horizontal */
+  gap: 2rem; /* Espacio entre las ciudades */
+}
+
+.city {
+  text-align: left;
+}
+
+.city-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.address {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.horizontal-divider {
+  border-top: 4px solid #FFFFFF;
+  width: 77%;
+  margin: 1rem 0;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  text-align: right;
+  margin-top: 1.5rem;
+}

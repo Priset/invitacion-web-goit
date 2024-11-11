@@ -1,0 +1,61 @@
+.llajta-section {
+  text-align: left;
+  padding: 2rem;
+  font-family: 'Articulat', sans-serif;
+  max-width: 1020px; /* Reduce el ancho total de la sección */
+  margin: 0 auto;
+}
+
+.llajta-section h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.llajta-section h2::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #01C38D;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+.highlighted-box {
+  background-color: #3E4C8A; /* Color azul correcto */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+
+.highlighted-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.text-block {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-bottom: 1px solid #01C38D;
+}
+
+.text-item {
+  text-align: left;
+}
+
+.text-item p {
+  font-weight: 400;
+  color: #000000;
+  font-size: 1rem;
+  margin: 0;
+}

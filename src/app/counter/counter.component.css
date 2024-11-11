@@ -1,0 +1,30 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 5rem;
+}
+
+.counter-box {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5rem 3rem; /* Aumentamos el padding para hacerlo más grande */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 950px; /* Ajustamos el ancho para que sea similar a los tres cuadros combinados */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Articulat', sans-serif;
+}
+
+.time {
+  font-size: 4rem; /* Aumentamos el tamaño del contador */
+  font-weight: bold;
+}
+
+.days {
+  font-size: 1.5rem;
+  font-weight: normal;
+}

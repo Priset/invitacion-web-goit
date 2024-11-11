@@ -6,6 +6,7 @@ import {HistoryComponent} from './history/history.component';
 import {LlajtaComponent} from './llajta/llajta.component';
 import {HotelBookingComponent} from './hotel-booking/hotel-booking.component';
 import {FooterComponent} from './footer/footer.component';
+import {CounterComponent} from './counter/counter.component';
 
 
 @Component({
@@ -15,6 +16,7 @@ import {FooterComponent} from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     EventInfoComponent,
+    CounterComponent,
     HistoryComponent,
     LlajtaComponent,
     HotelBookingComponent,
