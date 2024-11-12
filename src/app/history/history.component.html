@@ -3,17 +3,20 @@
   <p>Viaja con nosotros a través de nuestros recuerdos</p>
 
   <div class="carousel-container">
-    <div class="carousel">
-      <img [src]="images[currentIndex]" alt="History Image" class="carousel-image" />
-      <button class="arrow left-arrow" (click)="goPrevious()">&#10094;</button>
-      <button class="arrow right-arrow" (click)="goNext()">&#10095;</button>
+    <div
+      class="carousel-track"
+      [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+    >
+      <img *ngFor="let image of images" [src]="image" alt="History Image" class="carousel-image" />
     </div>
-    <div class="indicators">
-      <span
-        *ngFor="let image of images; let i = index"
-        [class.active]="i === currentIndex"
-        (click)="setIndex(i)">
-      </span>
-    </div>
+    <button class="arrow left-arrow" (click)="goPrevious()">&#10094;</button>
+    <button class="arrow right-arrow" (click)="goNext()">&#10095;</button>
+  </div>
+  <div class="indicators">
+    <span
+      *ngFor="let image of images; let i = index"
+      [class.active]="i === currentIndex"
+      (click)="setIndex(i)">
+    </span>
   </div>
 </section>

@@ -8,29 +8,34 @@
   font-weight: 700;
   font-size: 2rem;
   color: #000000;
+  margin-bottom: 0.5rem;
 }
 
 .history-section p {
   font-weight: 400;
   font-size: 1.2rem;
   color: #555555;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .carousel-container {
   position: relative;
-  max-width: 950px;
+  width: 1092px; /* Ancho especificado */
+  height: 552px; /* Alto especificado */
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.carousel {
-  position: relative;
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transición suave entre imágenes */
 }
 
 .carousel-image {
-  width: 100%;
-  border-radius: 8px;
-  transition: opacity 0.5s ease-in-out;
+  width: 1092px; /* Ancho de la imagen para ajustarse al contenedor */
+  height: 552px; /* Alto de la imagen */
+  flex-shrink: 0;
 }
 
 .arrow {
@@ -55,7 +60,7 @@
   right: 0.5rem;
 }
 
-.carousel:hover .arrow {
+.carousel-container:hover .arrow {
   opacity: 0.7;
 }
 
