@@ -6,14 +6,25 @@
 }
 
 .footer-content {
+  display: flex;
+  flex-direction: column; /* Alinea Perú y Bolivia en columna */
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
-  padding-bottom: 1.5rem;
 }
 
-.country-section {
-  margin-bottom: 1.5rem;
+.section {
+  flex: 1;
+}
+
+.copyright-section {
+  text-align: left;
+  margin-right: auto; /* Mueve copyright a la izquierda */
+}
+
+.peru-section{
+  text-align: left;
+  margin-left: 17.5rem;
 }
 
 .country-title {
@@ -22,10 +33,23 @@
   margin-bottom: 0.5rem;
 }
 
+.horizontal-divider-bolivia {
+  border-top: 1px solid rgba(255, 255, 255, 0.56);
+  width: 100%; /* Ancho completo para el separador */
+  margin: 0.5rem 0;
+}
+
+.horizontal-divider-peru {
+  border-top: 1px solid rgba(255, 255, 255, 0.56);
+  width: 195%; /* Ancho completo para el separador */
+  margin: 0.5rem 0;
+}
+
 .city-info {
   display: flex;
-  justify-content: flex-start; /* Alineación en una fila horizontal */
-  gap: 2rem; /* Espacio entre las ciudades */
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .city {
@@ -43,15 +67,15 @@
   margin: 0;
 }
 
-.horizontal-divider {
-  border-top: 4px solid #FFFFFF;
-  width: 77%;
-  margin: 1rem 0;
+/* Ajuste adicional para el espaciado entre secciones */
+.bolivia-section {
+  margin-top: 1rem; /* Espacio adicional entre Perú y Bolivia */
+  margin-left: auto;
 }
 
 .copyright {
   font-size: 0.8rem;
   color: #FFFFFF;
-  text-align: right;
+  text-align: left;
   margin-top: 1.5rem;
 }
