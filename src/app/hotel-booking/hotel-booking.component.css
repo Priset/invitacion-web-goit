@@ -2,8 +2,10 @@
   background-color: #01C38D; /* Color verde según la paleta */
   padding: 2rem;
   border-radius: 12px;
-  max-width: 800px; /* Ajusta el ancho de la sección */
-  margin: 2rem auto;
+  max-width: 1110px; /* Ajusta el ancho de la sección */
+  margin-left: 13.7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,8 +36,11 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para suavizar los cambios de color */
 }
 
 .booking-button:hover {
+  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
+  color: #01C38D; /* Cambia el color del texto a blanco */
   opacity: 0.9;
 }

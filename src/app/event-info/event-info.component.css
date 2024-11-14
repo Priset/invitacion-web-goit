@@ -12,7 +12,7 @@
   margin-bottom: 3rem;
   position: relative;
   display: inline-block;
-  margin-left: 8rem; /* Ajusta este valor para mover el texto más a la derecha */
+  margin-left: 13rem;
 }
 
 .event-info-section h2::before {
@@ -34,6 +34,17 @@
 
 .info-item {
   text-align: center;
+}
+
+/* Ajuste de márgenes para centrar los cuadros */
+.info-item:nth-child(1),
+.info-item:nth-child(4) {
+  margin-left: 10rem; /* Empuja estos cuadros hacia el centro */
+}
+
+.info-item:nth-child(3),
+.info-item:nth-child(6) {
+  margin-right: 10rem; /* Empuja estos cuadros hacia el centro */
 }
 
 .info-box {

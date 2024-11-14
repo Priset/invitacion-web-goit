@@ -11,7 +11,7 @@ export class CounterComponent implements OnInit, OnDestroy {
   hours: string = '00';
   minutes: string = '00';
   days: number = 0;
-  private targetDate = new Date('2024-11-18T16:30:00'); // Fecha objetivo
+  private targetDate = new Date('2025-02-01T16:30:00'); // Fecha objetivo
   private intervalId: any;
 
   ngOnInit(): void {

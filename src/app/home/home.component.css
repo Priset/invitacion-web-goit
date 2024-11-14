@@ -3,6 +3,7 @@
   padding: 2rem;
   font-family: 'Articulat', sans-serif; /* Aplicando la tipografía Articulat */
   color: #000000; /* Color de texto negro */
+  margin-bottom: 10px;
 }
 
 h1 {

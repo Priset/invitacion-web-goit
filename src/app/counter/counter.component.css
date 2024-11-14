@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .counter-box {
@@ -12,7 +12,7 @@
   padding: 5rem 3rem; /* Aumentamos el padding para hacerlo más grande */
   border-radius: 8px;
   width: 100%;
-  max-width: 950px; /* Ajustamos el ancho para que sea similar a los tres cuadros combinados */
+  max-width: 1100px; /* Ajustamos el ancho para que sea similar a los tres cuadros combinados */
   display: flex;
   align-items: center;
   gap: 1rem;

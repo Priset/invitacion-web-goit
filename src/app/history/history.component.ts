@@ -24,7 +24,7 @@ export class HistoryComponent implements OnInit {
   startAutoSlide(): void {
     this.intervalId = setInterval(() => {
       this.goNext();
-    }, 3000); // Cambia cada 3 segundos
+    }, 5000); // Cambia cada 3 segundos
   }
 
   goNext(): void {
