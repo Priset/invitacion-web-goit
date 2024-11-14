@@ -7,24 +7,45 @@
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Alinea Perú y Bolivia en columna */
+  flex-direction: column;
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.section {
-  flex: 1;
+/* Estilo para el logo y posición de íconos de redes sociales */
+.logo-goit {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem; /* Espacio entre el logo y los íconos */
+  margin-bottom: 1.5rem;
 }
 
+.logo {
+  width: 7.5rem; /* Tamaño del logo */
+  height: auto;
+  margin-top: -30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 2rem; /* Tamaño de cada ícono social */
+  height: 2rem;
+  margin-top: -20px;
+  fill: #b9e4dc; /* Color para los íconos */
+}
+
+/* Sección de Copyright */
 .copyright-section {
-  text-align: left;
-  margin-right: auto; /* Mueve copyright a la izquierda */
-}
-
-.peru-section{
-  text-align: left;
-  margin-left: 17.5rem;
+  text-align: center;
+  margin-top: -22.7px;
+  font-size: 0.75rem;
 }
 
 .country-title {
@@ -33,15 +54,10 @@
   margin-bottom: 0.5rem;
 }
 
-.horizontal-divider-bolivia {
-  border-top: 1px solid rgba(255, 255, 255, 0.56);
-  width: 100%; /* Ancho completo para el separador */
-  margin: 0.5rem 0;
-}
-
+.horizontal-divider-bolivia,
 .horizontal-divider-peru {
   border-top: 1px solid rgba(255, 255, 255, 0.56);
-  width: 195%; /* Ancho completo para el separador */
+  width: 100%;
   margin: 0.5rem 0;
 }
 
@@ -50,10 +66,6 @@
   justify-content: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
-}
-
-.city {
-  text-align: left;
 }
 
 .city-name {
@@ -68,14 +80,19 @@
 }
 
 /* Ajuste adicional para el espaciado entre secciones */
-.bolivia-section {
-  margin-top: 1rem; /* Espacio adicional entre Perú y Bolivia */
-  margin-left: auto;
+.peru-section {
+  margin-top: -125px;
+  margin-left: 17.5rem;
+  margin-bottom: 0px;
 }
 
-.copyright {
-  font-size: 0.8rem;
-  color: #FFFFFF;
-  text-align: left;
-  margin-top: 1.5rem;
+.city-piura {
+  margin-left: 8.5rem;
 }
+
+.bolivia-section {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-bottom: 0px;
+}
+
