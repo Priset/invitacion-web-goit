@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HotelBookingComponent {
   redirectToBooking() {
-    window.location.href = 'https://www.youtube.com/watch?v=EpVzgyUdKDg';
+    window.open('https://www.youtube.com/watch?v=EpVzgyUdKDg', '_blank');
   }
 }
