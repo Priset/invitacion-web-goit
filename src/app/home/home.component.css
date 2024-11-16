@@ -33,3 +33,22 @@ h1 {
   margin-top: 0.5rem;
   line-height: 1.5;
 }
+
+.register-button {
+  background-color: #01C38D;
+  color: #D0F4EA;
+  border: none;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.register-button:hover {
+  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
+  color: #01C38D; /* Cambia el color del texto */
+  opacity: 0.9;
+}

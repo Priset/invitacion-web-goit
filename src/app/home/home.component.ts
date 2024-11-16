@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  redirectToRegister(): void {
+    window.open('https://www.youtube.com/watch?v=qbrSuaxnMS0', '_blank'); // Reemplaza con tu URL de formulario de registro
+  }
 }
