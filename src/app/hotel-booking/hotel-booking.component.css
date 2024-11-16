@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .booking-content {
@@ -19,12 +20,13 @@
 .booking-content h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  margin: 0;
+  margin-inline-start: 20px;
 }
 
 .booking-content p {
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  margin-inline-start: 20px;
 }
 
 .booking-button {
@@ -37,10 +39,22 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición para suavizar los cambios de color */
+  margin-inline-start: 20px;
 }
 
 .booking-button:hover {
   background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
-  color: #01C38D; /* Cambia el color del texto a blanco */
+  color: #01C38D; /* Cambia el color del texto */
   opacity: 0.9;
+}
+
+.booking-image {
+  max-width: 300px; /* Ajusta el tamaño de la imagen */
+}
+
+.booking-image img {
+  position: absolute;
+  width: 40%; /* Tamaño de cada ícono social */
+  right: 50px;
+  bottom: 0px;
 }

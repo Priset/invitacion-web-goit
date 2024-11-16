@@ -32,8 +32,8 @@
 /* Estilo para la imagen de brindis */
 .brindis-image {
   position: absolute;
-  right: -2rem; /* Ajusta según necesites para que sobresalga del borde derecho */
-  bottom: 0;
-  height: 170%; /* Ajusta la altura para que tenga el tamaño deseado */
+  right: 10px; /* Ajusta según necesites para que sobresalga del borde derecho */
+  bottom: 67px;
+  height: 180%; /* Ajusta la altura para que tenga el tamaño deseado */
   transform: translateY(20%); /* Ajusta el valor para que se eleve un poco fuera del contenedor */
 }

@@ -35,10 +35,11 @@
 }
 
 .social-icon {
-  width: 2rem; /* Tamaño de cada ícono social */
-  height: 2rem;
+  width: 1.7rem; /* Tamaño de cada ícono social */
+  height: 1.7rem;
   margin-top: -20px;
-  fill: #b9e4dc; /* Color para los íconos */
+  margin-inline-start: 5.5px;
+  fill: #b9e4dc;
 }
 
 /* Sección de Copyright */
