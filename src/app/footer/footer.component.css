@@ -40,6 +40,12 @@
   margin-top: -20px;
   margin-inline-start: 5.5px;
   fill: #b9e4dc;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Pequeño zoom al pasar el mouse */
 }
 
 /* Sección de Copyright */
@@ -84,7 +90,6 @@
 .peru-section {
   margin-top: -125px;
   margin-left: 17.5rem;
-  margin-bottom: 0px;
 }
 
 .city-piura {
@@ -94,6 +99,5 @@
 .bolivia-section {
   margin-top: 60px;
   margin-left: auto;
-  margin-bottom: 0px;
 }
 

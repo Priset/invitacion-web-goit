@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  redirectTo(url: string): void {
+    window.open(url, '_blank');
+  }
 }

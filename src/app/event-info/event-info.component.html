@@ -32,10 +32,12 @@
       <p class="info-text">Degustación de comidas típicas del departamento</p>
     </div>
     <div class="info-item">
-      <div class="info-box alternate">
+      <div class="info-box alternate" (click)="openSongPopup()">
         <img src="/assets/music-icon.png" alt="Music Icon" class="icon" />
       </div>
       <p class="info-text">Con la participación de distintos grupos musicales</p>
     </div>
   </div>
+
+  <app-song-recommendation></app-song-recommendation>
 </section>

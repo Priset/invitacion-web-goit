@@ -4,7 +4,6 @@
   max-width: 1100px;
   margin-left: 13.7rem;
   margin-top: 4rem;
-
 }
 
 .llajta-section h2 {
@@ -13,8 +12,10 @@
   color: #000000;
   margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
   margin-left: 1.5rem;
+  display: inline-flex; /* Cambiado para incluir el icono al lado del texto */
+  align-items: center; /* Alinea verticalmente el texto e ícono */
+  gap: 0.5rem; /* Espacio entre el texto y el ícono */
 }
 
 .llajta-section h2::before {
@@ -27,10 +28,18 @@
   top: 0;
 }
 
+.llajta-icon {
+  width: 30px; /* Tamaño del ícono */
+  height: 30px;
+  object-fit: contain; /* Asegura que mantenga proporciones */
+  margin-left: 1rem;
+}
+
 .text-block {
   display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente los textos e imágenes */
+  padding: 0.3rem 0; /* Ajusta el espacio vertical */
   border-bottom: 1px solid #01C38D;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 8px; /* Bordes redondeados */
@@ -43,6 +52,7 @@
 
 .text-item {
   text-align: left;
+  margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
 }
 
 .text-item p {
@@ -55,4 +65,12 @@
 
 .text-block:hover .text-item p {
   color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.attraction-image {
+  width: 200px; /* Tamaño ligeramente más grande para las imágenes */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
+  margin-right: 4rem; /* Reduce el espacio entre los textos y la imagen */
 }

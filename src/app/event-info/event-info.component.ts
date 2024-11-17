@@ -1,22 +1,25 @@
 import { Component } from '@angular/core';
 import confetti from 'canvas-confetti';
+import {SongRecommendationComponent} from '../song-recommendation/song-recommendation.component';
 
 @Component({
   selector: 'app-event-info',
   standalone: true,
-  imports: [],
+  imports: [
+    SongRecommendationComponent
+  ],
   templateUrl: './event-info.component.html',
   styleUrl: './event-info.component.css'
 })
 export class EventInfoComponent {
 
   triggerConfetti(event: MouseEvent): void {
-    const { clientX, clientY } = event; // Obtiene la posición del clic
+    const { clientX, clientY } = event;
     confetti({
       particleCount: 100,
       spread: 70,
       origin: {
-        x: clientX / window.innerWidth,  // Convierte la posición a coordenadas relativas
+        x: clientX / window.innerWidth,
         y: clientY / window.innerHeight
       }
     });
@@ -28,5 +31,9 @@ export class EventInfoComponent {
 
   redirectToMaps(): void {
     window.open('https://maps.google.com', '_blank');
+  }
+
+  openSongPopup(): void {
+    document.getElementById('songPopup')?.classList.add('visible');
   }
 }

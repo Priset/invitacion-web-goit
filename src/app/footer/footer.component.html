@@ -1,15 +1,34 @@
 <footer class="footer">
   <div class="footer-content">
-    
-    <!-- Sección de Logo e Iconos de Redes Sociales -->
+
     <div class="logo-goit">
-      <img src="assets/logo-goit-original.png" alt="GOIT Logo" class="logo" />
+      <img src="/assets/logo-goit-original.png" alt="GOIT Logo" class="logo" />
 
       <div class="social-icons">
-        <img src="assets/facebook-icon.png" alt="Facebook" class="social-icon" />
-        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="social-icon" />
-        <img src="assets/web-icon.png" alt="Website" class="social-icon" />
-        <img src="assets/youtube-icon.png" alt="YouTube" class="social-icon" />
+        <img
+          src="/assets/facebook-icon.png"
+          alt="Facebook"
+          class="social-icon"
+          (click)="redirectTo('https://www.facebook.com')"
+        />
+        <img
+          src="/assets/linkedin-icon.png"
+          alt="LinkedIn"
+          class="social-icon"
+          (click)="redirectTo('https://www.linkedin.com')"
+        />
+        <img
+          src="/assets/web-icon.png"
+          alt="Website"
+          class="social-icon"
+          (click)="redirectTo('https://www.goit.bo')"
+        />
+        <img
+          src="/assets/youtube-icon.png"
+          alt="YouTube"
+          class="social-icon"
+          (click)="redirectTo('https://www.youtube.com')"
+        />
       </div>
     </div>
 
