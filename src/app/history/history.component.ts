@@ -10,9 +10,19 @@ import { CommonModule } from '@angular/common';
 })
 export class HistoryComponent implements OnInit {
   images = [
-    '/assets/fondo-morado.jpg',
-    '/assets/fondo-samurai.jpg',
-    '/assets/Senna-League-Of-Legends-Reveal.png'
+    '/assets/almuerzo-fin-2023-1.jpg',
+    '/assets/almuerzo-fin-2023-2.jpg',
+    '/assets/cena-fin-2022-1.jpg',
+    '/assets/cena-fin-2022-2.jpg',
+    '/assets/cena-fin-2022-3.jpg',
+    '/assets/cena-trabajador-santa-2024.jpg',
+    '/assets/compadres-2023.jpg',
+    '/assets/cumple-eli-2023.jpg',
+    '/assets/dia-trabajador-2023.jpg',
+    '/assets/dia-trabajador-lpz-2024.jpg',
+    '/assets/evento-2023.jpg',
+    '/assets/navidad-2023-1.jpg',
+    '/assets/navidad-2023-2.jpg'
   ];
   currentIndex = 0;
   intervalId: any;
