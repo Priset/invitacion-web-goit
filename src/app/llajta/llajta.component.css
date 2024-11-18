@@ -73,4 +73,10 @@
   border-radius: 8px; /* Bordes redondeados para las imágenes */
   object-fit: cover; /* Mantiene las proporciones de la imagen */
   margin-right: 4rem; /* Reduce el espacio entre los textos y la imagen */
+  transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+/* Efecto de zoom en hover */
+.attraction-image:hover {
+  transform: scale(1.5); /* Agranda la imagen un 10% */
 }
