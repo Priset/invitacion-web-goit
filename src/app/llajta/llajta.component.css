@@ -39,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centra verticalmente los textos e imágenes */
-  padding: 0.3rem 0; /* Ajusta el espacio vertical */
+  padding: 0.3rem; /* Ajusta el espacio vertical */
   border-bottom: 1px solid #01C38D;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 8px; /* Bordes redondeados */
@@ -48,6 +48,11 @@
 
 .text-block:hover {
   background-color: #3E4C8A; /* Fondo azul en hover */
+}
+
+.title-text-item {
+  text-align: left;
+  margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
 }
 
 .text-item {
@@ -63,7 +68,19 @@
   transition: color 0.3s ease;
 }
 
+.title-text-item p {
+  font-weight: 700;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
 .text-block:hover .text-item p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-block:hover .title-text-item p {
   color: #FFFFFF; /* Cambia a blanco en hover */
 }
 
