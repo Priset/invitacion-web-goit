@@ -10,5 +10,12 @@ import { Component } from '@angular/core';
 export class SongRecommendationComponent {
   closePopup(): void {
     document.getElementById('songPopup')?.classList.remove('visible');
+    document.getElementById('backdrop')?.classList.remove('visible');
   }
+
+  openPopup(): void {
+    document.getElementById('songPopup')?.classList.add('visible');
+    document.getElementById('backdrop')?.classList.add('visible');
+  }
+  
 }

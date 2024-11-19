@@ -10,19 +10,19 @@ import { CommonModule } from '@angular/common';
 })
 export class HistoryComponent implements OnInit {
   images = [
-    '/assets/almuerzo-fin-2023-1.jpg',
-    '/assets/almuerzo-fin-2023-2.jpg',
-    '/assets/cena-fin-2022-1.jpg',
-    '/assets/cena-fin-2022-2.jpg',
-    '/assets/cena-fin-2022-3.jpg',
-    '/assets/cena-trabajador-santa-2024.jpg',
-    '/assets/compadres-2023.jpg',
-    '/assets/cumple-eli-2023.jpg',
-    '/assets/dia-trabajador-2023.jpg',
-    '/assets/dia-trabajador-lpz-2024.jpg',
-    '/assets/evento-2023.jpg',
-    '/assets/navidad-2023-1.jpg',
-    '/assets/navidad-2023-2.jpg'
+    //'/assets/almuerzo-fin-2023-1.jpg',
+    //'/assets/almuerzo-fin-2023-2.jpg',
+    //'/assets/cena-fin-2022-1.jpg',
+    '/assets/6-CENA-FIN-DE-AÑO-CBBA.png',
+    //'/assets/cena-fin-2022-3.jpg',
+    '/assets/4-DÍA-DE-COMPADRES-CBBA.png',
+    //'/assets/cumple-eli-2023.jpg',
+    '/assets/1-Dia-del-Trabajador-CBBA.png',
+    '/assets/2-Dia-del-trabajador-LA-PAZ.png',
+    '/assets/3-Dia-del-Trabajador-SCZ.png',
+    //'/assets/evento-2023.jpg',
+    '/assets/5-Celebracion-fin-de-año-CBBA.png',
+    //'/assets/navidad-2023-2.jpg'
   ];
   currentIndex = 0;
   intervalId: any;

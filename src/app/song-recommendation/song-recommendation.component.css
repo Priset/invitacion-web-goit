@@ -1,17 +1,64 @@
+/* Fondo difuso para el resto de la página */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Sombra oscura semitransparente */
+  backdrop-filter: blur(4px); /* Difumina el fondo */
+  z-index: 998; /* Asegura que esté detrás del popup */
+  display: none;
+}
+
+.backdrop.visible {
+  display: block;
+}
+
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #f0f6f4;
-  padding: 2rem;
+  padding: 0 2rem 2rem; /* Eliminamos padding superior */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  z-index: 1000;
+  z-index: 999;
+  max-width: 600px;
+  width: 100%;
+}
+
+.image-container {
+  width: 112%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Asegura que no se desborde */
+  border-radius: 12px 12px 0 0; /* Solo redondeamos la parte superior */
+}
+
+.header-image {
+  width: 100%;
+  margin: 0; /* Eliminamos márgenes */
+  border-radius: inherit; /* Hereda los bordes redondeados del contenedor */
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold; /* Negrillas para el título */
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem; /* Tamaño más pequeño que el título */
+  text-align: center; /* Centra el texto */
+  font-weight: normal;
+  margin: 0;
 }
 
 .popup.visible {
@@ -37,13 +84,19 @@
 
 .close-button {
   background-color: #01C38D;
-  color: white;
+  color: #D0F4EA;
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1.5rem;
 }
 
 .close-button:hover {
-  background-color: #019a75;
+  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
+  color: #01C38D; /* Cambia el color del texto */
+  opacity: 0.9;
 }
