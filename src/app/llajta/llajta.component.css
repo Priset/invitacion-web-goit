@@ -55,19 +55,6 @@
   margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
 }
 
-.text-item {
-  text-align: left;
-  margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
-}
-
-.text-item p {
-  font-weight: 400;
-  color: #000000; /* Color negro en estado normal */
-  font-size: 1rem;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
 .title-text-item p {
   font-weight: 700;
   color: #000000; /* Color negro en estado normal */
@@ -76,7 +63,71 @@
   transition: color 0.3s ease;
 }
 
-.text-block:hover .text-item p {
+.text-item1 {
+  text-align: left;
+  margin-left: 1rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item1 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item1 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item2 {
+  text-align: left;
+  margin-left: 0.6rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item2 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item2 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item3 {
+  text-align: left;
+  margin-left: 3.4rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item3 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item3 p {
+  color: #FFFFFF; /* Cambia a blanco en hover */
+}
+
+.text-item4 {
+  text-align: left;
+  margin-left: 4rem; /* Reduce más el espacio entre textos y la imagen */
+}
+
+.text-item4 p {
+  font-weight: 400;
+  color: #000000; /* Color negro en estado normal */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-block:hover .text-item4 p {
   color: #FFFFFF; /* Cambia a blanco en hover */
 }
 
