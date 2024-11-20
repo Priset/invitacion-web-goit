@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   redirectToRegister(): void {
-    window.open('https://www.youtube.com/watch?v=qbrSuaxnMS0', '_blank'); // Reemplaza con tu URL de formulario de registro
+    window.open('https://forms.office.com/r/xiRiUvhS7R', '_blank');
   }
 }
