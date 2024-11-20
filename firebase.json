@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "/dist/evento-goit/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

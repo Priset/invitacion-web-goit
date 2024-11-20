@@ -1,0 +1,17 @@
+<div class="backdrop" id="backdrop"></div>
+<div id="songPopup" class="popup">
+  <div class="image-container">
+    <img src="assets/song-recommendation.png" alt="Music Header" class="header-image" />
+  </div>
+  <h3 class="title">¡Comparte tu música!</h3>
+  <h4 class="subtitle">¿Tienes alguna canción que te gustaría escuchar en la fiesta?</h4>
+  <div class="input-group">
+    <label for="artist">Nombre del Artista</label>
+    <input type="text" id="artist" placeholder="Ej. Queen" />
+  </div>
+  <div class="input-group">
+    <label for="song">Nombre de la Canción</label>
+    <input type="text" id="song" placeholder="Ej. Bohemian Rhapsody" />
+  </div>
+  <button class="close-button" (click)="closePopup()">Compartir</button>
+</div>

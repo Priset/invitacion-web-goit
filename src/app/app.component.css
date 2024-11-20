@@ -1,0 +1,7 @@
+:host {
+    background-color: #ace9d72e;
+    display: block;
+    min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+    position: relative;
+    z-index: auto;
+}  
