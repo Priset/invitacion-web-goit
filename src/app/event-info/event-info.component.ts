@@ -26,11 +26,11 @@ export class EventInfoComponent {
   }
 
   redirectToSite(): void {
-    window.open('https://example.com', '_blank');
+    window.open('https://www.granhotelcochabamba.com.bo/es', '_blank');
   }
 
   redirectToMaps(): void {
-    window.open('https://maps.google.com', '_blank');
+    window.open('https://maps.app.goo.gl/LtWcZ7DXb18KPm9s5?g_st=iw', '_blank');
   }
 
   openSongPopup(): void {
