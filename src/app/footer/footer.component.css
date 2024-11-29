@@ -55,7 +55,13 @@
   font-size: 0.75rem;
 }
 
-.country-title {
+.country-title-peru {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.country-title-bolivia {
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -118,7 +124,11 @@
     gap: 1rem; /* Reduce el espacio entre ciudades */
   }
 
-  .country-title {
+  .country-title-peru {
+    font-size: 1rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .country-title-bolivia {
     font-size: 1rem; /* Reduce ligeramente el tamaño del título */
   }
 
@@ -161,6 +171,12 @@
     padding: 1rem; /* Reduce el padding general */
   }
 
+  .footer {
+    width: 386px;
+    margin-inline-start: -8px;
+    margin-bottom: -8px;
+  }
+
   .logo {
     width: 6rem; /* Reduce el tamaño del logo */
     margin-top: 0; /* Elimina el margen superior */
@@ -175,12 +191,22 @@
     height: 1.2rem;
   }
 
+  .horizontal-divider-peru {
+    width: 135%;
+    margin-inline-start: -37px;
+}
+
   .city-info {
     flex-direction: column; /* Cambia a disposición vertical */
     align-items: center;
   }
 
-  .country-title {
+  .country-title-peru {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+    margin-inline-start: -37px;
+  }
+
+  .country-title-bolivia {
     font-size: 0.9rem; /* Reduce el tamaño del título */
   }
 
@@ -188,6 +214,10 @@
   .address {
     text-align: center; /* Centra los textos */
     font-size: 0.8rem; /* Texto más compacto */
+  }
+
+  .city-piura {
+    margin-left: 0.2rem;
   }
 
   .copyright-section {
