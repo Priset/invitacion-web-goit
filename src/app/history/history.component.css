@@ -13,14 +13,14 @@
 .history-section p {
   font-weight: 400;
   font-size: 1.2rem;
-  color: #555555;
+  color: #000000;
   margin-bottom: 1.5rem;
 }
 
 .carousel-container {
   position: relative;
-  width: 1092px; /* Ancho especificado */
-  height: 552px; /* Alto especificado */
+  width: 1092px;
+  height: 552px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 8px;
@@ -28,12 +28,12 @@
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Transición suave entre imágenes */
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-  width: 1092px; /* Ancho de la imagen para ajustarse al contenedor */
-  height: 552px; /* Alto de la imagen */
+  width: 1092px;
+  height: 552px;
   flex-shrink: 0;
 }
 
@@ -89,32 +89,26 @@
 /* Tabletas */
 @media (max-width: 768px) {
   .carousel-container {
-    width: 90%; /* Ajusta el ancho al 90% de la pantalla */
-    height: auto; /* Mantiene proporción automática */
+    width: 90%;
+    height: auto;
   }
 
   .carousel-image {
     width: 100%;
-    height: auto; /* Ajusta el alto automáticamente */
+    height: auto;
   }
 
   .arrow {
-    font-size: 1.5rem; /* Reduce el tamaño del botón */
-    padding: 0.4rem; /* Botón más compacto */
+    font-size: 1.5rem;
+    padding: 0.3rem;
   }
 
   .history-section h2 {
-    font-size: 1.8rem; /* Reduce el tamaño del título */
+    font-size: 1.8rem;
   }
 
   .history-section p {
-    font-size: 1.1rem; /* Reduce el tamaño del texto */
-  }
-
-  .indicators span {
-    height: 8px; /* Indicadores más pequeños */
-    width: 8px;
-    margin: 0 4px;
+    font-size: 1rem;
   }
 }
 
@@ -122,31 +116,30 @@
 @media (max-width: 480px) {
   .carousel-container {
     width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
+    height: auto;
   }
 
   .carousel-image {
-    width: 100%; /* Ajusta al ancho completo del contenedor */
-    height: auto; /* Ajusta el alto para mantener proporción */
+    width: 100%;
+    height: auto;
   }
 
   .arrow {
-    font-size: 1.2rem; /* Botón aún más pequeño */
-    padding: 0.3rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
   }
 
   .history-section h2 {
-    font-size: 1.5rem; /* Reduce el tamaño del título */
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .history-section p {
-    font-size: 1rem; /* Reduce el tamaño del texto */
+    font-size: 0.9rem;
   }
 
   .indicators span {
-    height: 6px; /* Indicadores más pequeños */
-    width: 6px;
+    height: 8px;
+    width: 8px;
     margin: 0 3px;
   }
 }

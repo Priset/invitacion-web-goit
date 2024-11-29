@@ -13,9 +13,9 @@
   margin-bottom: 1rem;
   position: relative;
   margin-left: 1.5rem;
-  display: inline-flex; /* Incluye el icono al lado del texto */
-  align-items: center; /* Alinea verticalmente texto e ícono */
-  gap: 0.5rem; /* Espacio entre texto e ícono */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .llajta-section h2::before {
@@ -41,9 +41,9 @@
   align-items: center;
   padding: 0.3rem;
   border-bottom: 1px solid #01C38D;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 8px;
   background-color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .text-block:hover {
@@ -100,70 +100,76 @@
 }
 
 .attraction-image:hover {
-  transform: scale(1.1); /* Agranda ligeramente la imagen en hover */
+  transform: scale(1.5);
 }
 
-/* RESPONSIVIDAD */
-
-/* Tabletas */
 @media (max-width: 768px) {
   .llajta-section {
-    margin-left: 2rem; /* Ajusta el margen izquierdo */
-    margin-right: 2rem;
-  }
-
-  .llajta-section h2 {
-    font-size: 1.8rem; /* Reduce ligeramente el tamaño del título */
-    margin-left: 0; /* Centra el título */
-    text-align: center;
+    max-width: 90%;
+    margin-left: 5%;
   }
 
   .text-block {
-    flex-direction: column; /* Cambia a diseño en columna */
-    align-items: flex-start; /* Alinea los textos e imágenes al inicio */
-    gap: 1rem; /* Espacio entre texto e imagen */
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1rem;
   }
 
+  .attraction-image {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+
   .title-text-item {
-    margin-left: 0; /* Elimina márgenes extra */
+    margin-left: 0;
   }
 
   .text-item1,
   .text-item2,
   .text-item3,
   .text-item4 {
-    margin-left: 0; /* Elimina márgenes laterales */
-  }
-
-  .attraction-image {
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-/* Móviles */
-@media (max-width: 480px) {
-  .llajta-section {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0;
   }
 
   .llajta-section h2 {
-    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
-    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .llajta-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .llajta-section {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   .text-block {
-    padding: 0.5rem; /* Reduce el padding */
-    gap: 0.5rem; /* Reduce el espacio entre elementos */
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
   .attraction-image {
     width: 100%;
-    height: auto; /* Ajusta el alto automáticamente */
-    margin-right: 0;
-    margin-top: 1rem; /* Espacio entre texto e imagen */
+    margin-top: 1rem;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .llajta-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .title-text-item p,
@@ -171,6 +177,6 @@
   .text-item2 p,
   .text-item3 p,
   .text-item4 p {
-    font-size: 0.9rem; /* Texto más pequeño */
+    font-size: 0.9rem;
   }
 }
