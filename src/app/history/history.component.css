@@ -83,3 +83,70 @@
 .indicators .active {
   background-color: #01C38D;
 }
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+    height: auto; /* Mantiene proporción automática */
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto; /* Ajusta el alto automáticamente */
+  }
+
+  .arrow {
+    font-size: 1.5rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem; /* Botón más compacto */
+  }
+
+  .history-section h2 {
+    font-size: 1.8rem; /* Reduce el tamaño del título */
+  }
+
+  .history-section p {
+    font-size: 1.1rem; /* Reduce el tamaño del texto */
+  }
+
+  .indicators span {
+    height: 8px; /* Indicadores más pequeños */
+    width: 8px;
+    margin: 0 4px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .carousel-image {
+    width: 100%; /* Ajusta al ancho completo del contenedor */
+    height: auto; /* Ajusta el alto para mantener proporción */
+  }
+
+  .arrow {
+    font-size: 1.2rem; /* Botón aún más pequeño */
+    padding: 0.3rem;
+  }
+
+  .history-section h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    margin-bottom: 0.5rem;
+  }
+
+  .history-section p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .indicators span {
+    height: 6px; /* Indicadores más pequeños */
+    width: 6px;
+    margin: 0 3px;
+  }
+}

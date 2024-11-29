@@ -101,3 +101,97 @@
   margin-left: auto;
 }
 
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .footer-content {
+    align-items: center; /* Centra el contenido */
+  }
+
+  .logo-goit {
+    align-items: center; /* Centra el logo y redes sociales */
+  }
+
+  .city-info {
+    justify-content: center; /* Centra la lista de ciudades */
+    gap: 1rem; /* Reduce el espacio entre ciudades */
+  }
+
+  .country-title {
+    font-size: 1rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .city-name {
+    font-size: 0.9rem; /* Reduce el tamaño de las ciudades */
+  }
+
+  .address {
+    font-size: 0.8rem; /* Reduce el tamaño de las direcciones */
+  }
+
+  .copyright-section {
+    font-size: 0.7rem; /* Texto más compacto */
+  }
+
+  .social-icons {
+    gap: 1rem; /* Reduce el espacio entre íconos */
+  }
+
+  .social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .peru-section {
+    margin-top: 1rem; /* Ajusta el margen superior */
+    margin-left: 0; /* Centra las secciones */
+  }
+
+  .bolivia-section {
+    margin-top: 2rem;
+    margin-left: 0; /* Centra las secciones */
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .footer-content {
+    align-items: center;
+    padding: 1rem; /* Reduce el padding general */
+  }
+
+  .logo {
+    width: 6rem; /* Reduce el tamaño del logo */
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  .social-icons {
+    gap: 0.8rem; /* Espacio compacto entre íconos */
+  }
+
+  .social-icon {
+    width: 1.2rem; /* Íconos más pequeños */
+    height: 1.2rem;
+  }
+
+  .city-info {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center;
+  }
+
+  .country-title {
+    font-size: 0.9rem; /* Reduce el tamaño del título */
+  }
+
+  .city-name,
+  .address {
+    text-align: center; /* Centra los textos */
+    font-size: 0.8rem; /* Texto más compacto */
+  }
+
+  .copyright-section {
+    font-size: 0.65rem; /* Texto más compacto */
+    margin-top: 1rem; /* Ajusta el margen superior */
+  }
+}

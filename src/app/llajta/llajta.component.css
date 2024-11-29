@@ -13,9 +13,9 @@
   margin-bottom: 1rem;
   position: relative;
   margin-left: 1.5rem;
-  display: inline-flex; /* Cambiado para incluir el icono al lado del texto */
-  align-items: center; /* Alinea verticalmente el texto e ícono */
-  gap: 0.5rem; /* Espacio entre el texto y el ícono */
+  display: inline-flex; /* Incluye el icono al lado del texto */
+  align-items: center; /* Alinea verticalmente texto e ícono */
+  gap: 0.5rem; /* Espacio entre texto e ícono */
 }
 
 .llajta-section h2::before {
@@ -29,122 +29,148 @@
 }
 
 .llajta-icon {
-  width: 30px; /* Tamaño del ícono */
+  width: 30px;
   height: 30px;
-  object-fit: contain; /* Asegura que mantenga proporciones */
+  object-fit: contain;
   margin-left: 1rem;
 }
 
 .text-block {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centra verticalmente los textos e imágenes */
-  padding: 0.3rem; /* Ajusta el espacio vertical */
+  align-items: center;
+  padding: 0.3rem;
   border-bottom: 1px solid #01C38D;
+  border-radius: 8px;
+  background-color: #FFFFFF;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 8px; /* Bordes redondeados */
-  background-color: #FFFFFF; /* Fondo blanco en estado normal */
 }
 
 .text-block:hover {
-  background-color: #3E4C8A; /* Fondo azul en hover */
+  background-color: #3E4C8A;
 }
 
 .title-text-item {
   text-align: left;
-  margin-left: 3rem; /* Reduce más el espacio entre textos y la imagen */
+  margin-left: 3rem;
 }
 
 .title-text-item p {
   font-weight: 700;
-  color: #000000; /* Color negro en estado normal */
+  color: #000000;
   font-size: 1rem;
   margin: 0;
   transition: color 0.3s ease;
 }
 
-.text-item1 {
-  text-align: left;
-  margin-left: 1rem; /* Reduce más el espacio entre textos y la imagen */
-}
-
-.text-item1 p {
-  font-weight: 400;
-  color: #000000; /* Color negro en estado normal */
-  font-size: 1rem;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
-.text-block:hover .text-item1 p {
-  color: #FFFFFF; /* Cambia a blanco en hover */
-}
-
-.text-item2 {
-  text-align: left;
-  margin-left: 0.6rem; /* Reduce más el espacio entre textos y la imagen */
-}
-
-.text-item2 p {
-  font-weight: 400;
-  color: #000000; /* Color negro en estado normal */
-  font-size: 1rem;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
-.text-block:hover .text-item2 p {
-  color: #FFFFFF; /* Cambia a blanco en hover */
-}
-
-.text-item3 {
-  text-align: left;
-  margin-left: 3.4rem; /* Reduce más el espacio entre textos y la imagen */
-}
-
-.text-item3 p {
-  font-weight: 400;
-  color: #000000; /* Color negro en estado normal */
-  font-size: 1rem;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
-.text-block:hover .text-item3 p {
-  color: #FFFFFF; /* Cambia a blanco en hover */
-}
-
+.text-item1,
+.text-item2,
+.text-item3,
 .text-item4 {
   text-align: left;
-  margin-left: 4rem; /* Reduce más el espacio entre textos y la imagen */
+  margin-left: 1rem;
 }
 
+.text-item1 p,
+.text-item2 p,
+.text-item3 p,
 .text-item4 p {
   font-weight: 400;
-  color: #000000; /* Color negro en estado normal */
+  color: #000000;
   font-size: 1rem;
   margin: 0;
   transition: color 0.3s ease;
 }
 
-.text-block:hover .text-item4 p {
-  color: #FFFFFF; /* Cambia a blanco en hover */
-}
-
+.text-block:hover .text-item1 p,
+.text-block:hover .text-item2 p,
+.text-block:hover .text-item3 p,
+.text-block:hover .text-item4 p,
 .text-block:hover .title-text-item p {
-  color: #FFFFFF; /* Cambia a blanco en hover */
+  color: #FFFFFF;
 }
 
 .attraction-image {
-  width: 200px; /* Tamaño ligeramente más grande para las imágenes */
+  width: 200px;
   height: auto;
-  border-radius: 8px; /* Bordes redondeados para las imágenes */
-  object-fit: cover; /* Mantiene las proporciones de la imagen */
-  margin-right: 4rem; /* Reduce el espacio entre los textos y la imagen */
-  transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 4rem;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto de zoom en hover */
 .attraction-image:hover {
-  transform: scale(1.5); /* Agranda la imagen un 10% */
+  transform: scale(1.1); /* Agranda ligeramente la imagen en hover */
+}
+
+/* RESPONSIVIDAD */
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .llajta-section {
+    margin-left: 2rem; /* Ajusta el margen izquierdo */
+    margin-right: 2rem;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.8rem; /* Reduce ligeramente el tamaño del título */
+    margin-left: 0; /* Centra el título */
+    text-align: center;
+  }
+
+  .text-block {
+    flex-direction: column; /* Cambia a diseño en columna */
+    align-items: flex-start; /* Alinea los textos e imágenes al inicio */
+    gap: 1rem; /* Espacio entre texto e imagen */
+    padding: 1rem;
+  }
+
+  .title-text-item {
+    margin-left: 0; /* Elimina márgenes extra */
+  }
+
+  .text-item1,
+  .text-item2,
+  .text-item3,
+  .text-item4 {
+    margin-left: 0; /* Elimina márgenes laterales */
+  }
+
+  .attraction-image {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .llajta-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+    text-align: center;
+  }
+
+  .text-block {
+    padding: 0.5rem; /* Reduce el padding */
+    gap: 0.5rem; /* Reduce el espacio entre elementos */
+  }
+
+  .attraction-image {
+    width: 100%;
+    height: auto; /* Ajusta el alto automáticamente */
+    margin-right: 0;
+    margin-top: 1rem; /* Espacio entre texto e imagen */
+  }
+
+  .title-text-item p,
+  .text-item1 p,
+  .text-item2 p,
+  .text-item3 p,
+  .text-item4 p {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
 }
