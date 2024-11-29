@@ -35,5 +35,6 @@ export class EventInfoComponent {
 
   openSongPopup(): void {
     document.getElementById('songPopup')?.classList.add('visible');
+    document.getElementById('backdrop')?.classList.add('visible');
   }
 }

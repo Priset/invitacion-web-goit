@@ -8,7 +8,6 @@ import {HotelBookingComponent} from './hotel-booking/hotel-booking.component';
 import {FooterComponent} from './footer/footer.component';
 import {CounterComponent} from './counter/counter.component';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
