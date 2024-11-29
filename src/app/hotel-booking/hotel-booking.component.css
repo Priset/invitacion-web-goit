@@ -116,6 +116,7 @@
 
   .booking-content p {
     font-size: 0.9rem; /* Texto más pequeño */
+    margin-top: -5px;
   }
 
   .booking-button {
@@ -125,11 +126,13 @@
 
   .booking-image {
     max-width: 200px; /* Imagen más pequeña */
-    margin-top: 1rem;
   }
 
   .booking-image img {
-    width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
+    position: relative;
+    width: 100%; /* Tamaño de la imagen */
+    bottom: -16px;
+    top: 16px;
   }
 }
+
