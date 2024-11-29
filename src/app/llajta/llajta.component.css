@@ -218,11 +218,20 @@
     height: 20px;
   }
 
-  .title-text-item p,
-  .text-item1 p,
-  .text-item2 p,
-  .text-item3 p,
-  .text-item4 p {
+  .title-text-item p {
     font-size: 0.9rem;
+    text-align: center;
   }
+
+  .text-item1,
+  .text-item2,
+  .text-item3,
+  .text-item4 {
+    text-align: center;
+  }
+
+  /* Efecto de zoom en hover */
+  .attraction-image:hover {
+    transform: scale(1.13); /* Agranda la imagen un 10% */
+}
 }
