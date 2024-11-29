@@ -41,9 +41,9 @@
   align-items: center;
   padding: 0.3rem;
   border-bottom: 1px solid #01C38D;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 8px;
   background-color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .text-block:hover {
@@ -100,26 +100,25 @@
 }
 
 .attraction-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
   .llajta-section {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .llajta-section h2 {
-    font-size: 1.8rem;
-    margin-left: 0;
-    text-align: center;
+    max-width: 90%;
+    margin-left: 5%;
   }
 
   .text-block {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
     padding: 1rem;
+  }
+
+  .attraction-image {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
   }
 
   .title-text-item {
@@ -133,33 +132,44 @@
     margin-left: 0;
   }
 
-  .attraction-image {
-    width: 100%;
-    margin-right: 0;
+  .llajta-section h2 {
+    font-size: 1.8rem;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .llajta-icon {
+    width: 25px;
+    height: 25px;
   }
 }
 
 @media (max-width: 480px) {
   .llajta-section {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .llajta-section h2 {
-    font-size: 1.5rem;
-    text-align: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   .text-block {
-    padding: 0.5rem;
-    gap: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
   .attraction-image {
     width: 100%;
-    height: auto;
-    margin-right: 0;
     margin-top: 1rem;
+  }
+
+  .llajta-section h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .llajta-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .title-text-item p,
