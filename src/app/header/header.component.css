@@ -22,10 +22,13 @@
 @media (max-width: 480px) {
   .header {
     height: 300px; /* Altura más pequeña en móviles */
-    margin-bottom: 20px;
+    width: 386px;
+    margin-inline-start: -8px;
+    margin-bottom: 0px;
+    margin-top: -8px;
   }
 
   .header-image {
-    object-fit: contain; /* Ajusta la imagen para que no se recorte */
+    object-fit: cover; /* Ajusta la imagen para que no se recorte */
   }
 }
