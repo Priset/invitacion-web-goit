@@ -4,9 +4,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* Sombra oscura semitransparente */
-  backdrop-filter: blur(4px); /* Difumina el fondo */
-  z-index: 998; /* Asegura que esté detrás del popup */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 998;
   display: none;
 }
 
@@ -32,20 +32,19 @@
   width: 100%;
 }
 
-/* Botón de cerrar (X) */
 .close-icon {
   margin-top: 2rem;
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejor visibilidad */
-  color: #fff; /* Color blanco para contraste */
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  z-index: 1000; /* Asegura que esté por encima de la imagen */
-  border-radius: 50%; /* Botón circular */
+  z-index: 1000;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   display: flex;
@@ -54,35 +53,34 @@
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-
 .close-icon:hover {
-  transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
-  background: rgba(1, 195, 141, 0.8); /* Fondo de color verde semitransparente */
+  transform: scale(1.2);
+  background: rgba(1, 195, 141, 0.8);
 }
 
 .image-container {
   width: 112%;
   display: flex;
   justify-content: center;
-  border-radius: 12px 12px 0 0; /* Solo redondeamos la parte superior */
+  border-radius: 12px 12px 0 0;
 }
 
 .header-image {
   width: 100%;
-  margin: 0; /* Eliminamos márgenes */
-  border-radius: inherit; /* Hereda los bordes redondeados del contenedor */
+  margin: 0;
+  border-radius: inherit;
 }
 
 .title {
   font-size: 1.8rem;
-  font-weight: bold; /* Negrillas para el título */
+  font-weight: bold;
   text-align: center;
   margin: 0.5rem 0;
 }
 
 .subtitle {
-  font-size: 1.2rem; /* Tamaño más pequeño que el título */
-  text-align: center; /* Centra el texto */
+  font-size: 1.2rem;
+  text-align: center;
   font-weight: normal;
   margin: 0;
 }
@@ -112,7 +110,6 @@
   font-size: 1rem;
 }
 
-/* Contenedor para alinear el botón "Compartir" al centro */
 .button-container {
   display: flex;
   justify-content: center;
@@ -132,8 +129,8 @@
 }
 
 .close-button:hover {
-  background-color: #D0F4EA; /* Color de fondo al pasar el mouse */
-  color: #01C38D; /* Cambia el color del texto */
+  background-color: #D0F4EA;
+  color: #01C38D;
   opacity: 0.9;
 }
 
@@ -141,4 +138,68 @@
   color: red;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+  .popup {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .close-icon {
+    font-size: 1.2rem;
+    width: 25px;
+    height: 25px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .input-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .close-button {
+    padding: 0.4rem 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .popup {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .close-icon {
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .input-group input {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .close-button {
+    padding: 0.3rem 2rem;
+    font-size: 0.8rem;
+  }
 }
