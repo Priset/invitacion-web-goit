@@ -192,8 +192,8 @@
   }
 
   .horizontal-divider-peru {
-    width: 135%;
-    margin-inline-start: -37px;
+    width: 143%;
+    margin-inline-start: -45px;
 }
 
   .city-info {
@@ -203,7 +203,7 @@
 
   .country-title-peru {
     font-size: 0.9rem; /* Reduce el tamaño del título */
-    margin-inline-start: -37px;
+    margin-inline-start: -45px;
   }
 
   .country-title-bolivia {
