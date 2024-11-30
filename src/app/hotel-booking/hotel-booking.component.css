@@ -112,16 +112,19 @@
 
   .booking-content h2 {
     font-size: 1.2rem; /* Reduce el tamaño del título */
+    margin-inline-start: -7px;
   }
 
   .booking-content p {
     font-size: 0.9rem; /* Texto más pequeño */
     margin-top: -5px;
+    margin-inline-start: -5px;
   }
 
   .booking-button {
     padding: 0.4rem 1.5rem; /* Botón más compacto */
     font-size: 0.85rem;
+    margin-top: 15px;
   }
 
   .booking-image {
@@ -135,4 +138,5 @@
     top: 16px;
   }
 }
+
 

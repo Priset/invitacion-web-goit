@@ -37,7 +37,7 @@
 
 .brindis-image {
   position: absolute;
-  right: 10px; /* Ajusta según necesites para que sobresalga del borde derecho */
+  right: 5px; /* Ajusta según necesites para que sobresalga del borde derecho */
   bottom: 67px;
   height: 180%; /* Ajusta la altura para que tenga el tamaño deseado */
   transform: translateY(20%); /* Ajusta el valor para que se eleve un poco fuera del contenedor */
@@ -80,19 +80,26 @@
     padding: 3rem 1rem; /* Reduce el padding interno */
     max-width: 100%;
     gap: 0.3rem; /* Reduce la separación entre elementos */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: flex-start;    /* Centra los elementos horizontalmente */
   }
 
   .time {
-    font-size: 2.5rem; /* Texto principal más pequeño */
+    font-size: 2.3rem; /* Texto principal más pequeño */
+    align-items: flex-start;
+    margin-top: 10px;
   }
 
   .time-text {
-    font-size: 1.1rem; /* Ajusta el texto adicional */
+    font-size: 0.9rem; /* Ajusta el texto adicional */
+    margin-top: 0.5rem; /* Agrega un margen superior para separarlo */
+    text-align: flex-start; /* Asegura que esté centrado */
   }
 
   .brindis-image {
-    height: 120%; /* Reduce aún más la imagen */
-    right: 0; /* Alínea al borde derecho */
-    bottom: 30px; /* Ajusta su posición vertical */
+    height: 110%; /* Reduce aún más la imagen */
+    right: 5px; /* Alínea al borde derecho */
+    bottom: 37px; /* Ajusta su posición vertical */
   }
 }
