@@ -227,14 +227,14 @@
 }
 
 /* Ajuste específico para iPhone 14 y dispositivos similares */
-@media screen and (min-device-width: 400px) and (max-device-width: 460px) and (min-device-height: 530px) and (max-device-height: 600px) {
+@media screen and (min-device-width: 430px) and (max-device-width: 470px) and (min-device-height: 530px) and (max-device-height: 600px) {
   .footer-content {
     align-items: center;
     padding: 1rem; /* Reduce el padding general */
   }
 
   .footer {
-    width: 450px;
+    width: 462px;
     margin-inline-start: -8px;
     margin-bottom: -8px;
   }
