@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HotelBookingComponent {
   redirectToBooking() {
-    window.open('https://www.youtube.com/watch?v=QtXby3twMmI', '_blank');
+    window.open('https://www.granhotelcochabamba.com.bo/es', '_blank');
   }
 }
