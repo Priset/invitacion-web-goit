@@ -34,15 +34,13 @@
 }
 
 /* Ajuste específico para iPhone 14 y dispositivos similares */
-@media screen and (min-device-width: 390px) and (max-device-width: 430px) and (min-device-height: 844px) and (max-device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (min-device-width: 400px) and (max-device-width: 460px) and (min-device-height: 530px) and (max-device-height: 600px) {
   .header {
-    height: 340px; /* Ajusta la altura específicamente para iPhone 14 */
     margin-bottom: 20px;
-    margin-top: 0;
+    width: 104%;
   }
 
   .header-image {
     object-fit: cover;
-    margin-top: -5px; /* Ajuste ligero para evitar cortes en la imagen */
   }
 }
