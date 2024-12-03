@@ -40,6 +40,7 @@
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición para suavizar los cambios de color */
   margin-inline-start: 20px;
+  margin-top: 1rem;
 }
 
 .booking-button:hover {
